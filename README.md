@@ -47,4 +47,4 @@ Novitech-AI-Course/
 ## Author
 
 Monishwar
-[GitHub](https://github.com/monishwar007) · [LinkedIn](https://linkedin.com/in/monishwarp)
+[GitHub](https://github.com/monishwar007) · [LinkedIn](https://www.linkedin.com/in/monishwar-p-9a511b341)
