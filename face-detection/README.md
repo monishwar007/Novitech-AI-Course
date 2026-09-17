@@ -29,6 +29,9 @@ faces = face_cascade.detectMultiScale(src, scaleFactor, minNeighbors)
 
 ## Files
 
+- `download_haarcascade.py` — run this FIRST. Downloads OpenCV's
+  official pre-trained Haar Cascade XML (`haarcascade_frontalface_default.xml`,
+  ~930 KB) into this folder.
 - `face_detection_image.py` — detect faces in a single still image
   (`crick.jpg` by default — replace with your own image and update
   the filename in the script).
@@ -37,13 +40,12 @@ faces = face_cascade.detectMultiScale(src, scaleFactor, minNeighbors)
 - `face_detection_video.py` — face detection on a video file
   (`check.mp4` by default — set `video_path = 0` to use your webcam
   instead).
-- `haarcascade_frontalface_default.xml` — OpenCV's pre-trained Haar
-  Cascade classifier for frontal face detection.
 
 ## Setup
 
 ```bash
 pip install opencv-python
+python download_haarcascade.py
 ```
 
 ## Run
@@ -68,8 +70,10 @@ python face_detection_video.py
 
 ## Notes
 
-- The Haar Cascade file must be in the same folder as the script (or
+- The Haar Cascade XML must be in the same folder as the script (or
   give the full path to it) — it's the pre-trained model that
-  `CascadeClassifier` loads.
+  `CascadeClassifier` loads. Get it by running
+  `download_haarcascade.py`, or download it directly from
+  [OpenCV's GitHub](https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml).
 - This detects **frontal faces**. For side profiles, OpenCV ships a
   separate `haarcascade_profileface.xml` cascade.
