@@ -1,0 +1,4 @@
+facial-emotion-recognition
+opencv-python
+numpy
+imutils
